@@ -24,6 +24,8 @@
 
 .recent_work-image {
   display: block;
+  padding: 0;
+  background: 0;
   width: 100%;
   &:hover + .recent_work-meta {
     opacity: 1;
