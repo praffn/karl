@@ -1,5 +1,7 @@
-body {
+  body {
+  padding-top: $header-height;
   color: $color-black;
+  min-height: 100vh;
 }
 
 

@@ -9,7 +9,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  background: teal;
   margin: 0 auto;
   width: map-get($widths, xsmall);
   @media #{$b-small} {
@@ -27,12 +26,3 @@
   }
 }
 
-
-
-
-
-.recent_work-article {
-  height: 200px;
-  width: 100px;
-  background: red;
-}

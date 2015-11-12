@@ -2,6 +2,41 @@
 }
 
 .recent_work-article {
-  background: blue;
-  width: 25%;
+  width: 100%;
+  padding: .3em;
+
+}
+
+.recent_work-permalink {
+  display: block;
+  position: relative;
+}
+
+.recent_work-image {
+  width: 100%;
+  &:hover + .recent_work-title {
+    opacity: 1;
+  }
+}
+
+.recent_work-title {
+  transition: opacity .3s;
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  background: rgba($color-accent, .8);
+  width: 90%;
+  height: 90%;
+  margin: 0;
+  top: 5%;
+  left: 5%;
+  text-align: center;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 0);
+    width: 100%;
+  }
 }

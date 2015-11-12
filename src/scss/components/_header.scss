@@ -4,6 +4,7 @@ body {
 
 
 .header {
+  box-shadow: 0 .1em 1em rgba(black, .4);
   background: $color-white;
   position: fixed;
   top: 0;
@@ -98,13 +99,14 @@ body {
 
 .header-menu {
   li {
-    height: $header-height / 3 * 1;
     a {
+      height: $header-height / 3 * 1 / 1.5;
       display: block;
       padding: .5em;
       font-size: 1.5em;
       text-align: center;
       transition: .3s ease background;
+      line-height: $header-height / 3 * 1 / 1.5;
     }
     &.active, &:hover {
       a {
@@ -121,6 +123,9 @@ body {
     display: flex;
     align-items: center;
     height: $header-height / 3 * 1;
+    .scrolled & {
+      border-top: 0;
+    }
     li {
       a {
         padding: 0 .7em;
@@ -128,7 +133,7 @@ body {
 
       }
       &.active, &:hover {
-        border-bottom: .4em solid darken($color-white, 20%);
+        background: $color-accent;
         a {
           background: transparent;
         }
