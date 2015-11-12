@@ -1,0 +1,154 @@
+body {
+  
+}
+
+
+.header {
+  background: $color-white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  a {
+    background: transparent;
+    font-family: $font-headings;
+    text-transform: uppercase;
+  }
+}
+
+.header-logo {
+  height: $header-height / 3 * 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease;
+
+  .scrolled & {
+    height: 0.01em;
+    overflow: hidden;
+
+  }
+
+  a {
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  img {
+    $logo-image-size: 2.5em;
+    width: $logo-image-size;
+    height: $logo-image-size;
+    margin-right: $logo-image-size / 5;
+  }
+
+}
+
+.header-nav {
+  height: $header-height / 3 * 1;
+}
+
+.header-menu_toggle {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: $header-height / 3 * 1;
+  background: $color-white;
+  i {
+    line-height: $header-height / 3 * 1 / 2;
+    font-size: 2em;
+    display: block;
+  }
+
+
+  @media #{$b-small} {
+    display: none;
+  }
+}
+
+#header-menu_toggle_checkbox {
+  display: none;
+}
+
+.header-menu {
+  background: darken($color-white, 5%);
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  transform: scaleY(0);
+  height: 0.01em;
+  transition: .3s;
+  transform-origin: top center;
+  #header-menu_toggle_checkbox:checked + & {
+    transform: none;
+    height: 15em;
+    @media #{$b-small} {
+      height: auto;
+    }
+  }
+
+  @media #{$b-small} {
+    transition: none;
+    transform: none;
+    height: auto;
+    background: transparent;
+  }
+
+}
+
+.header-menu {
+  li {
+    height: $header-height / 3 * 1;
+    a {
+      display: block;
+      padding: .5em;
+      font-size: 1.5em;
+      text-align: center;
+      transition: .3s ease background;
+    }
+    &.active, &:hover {
+      a {
+        background: darken($color-white, 10%);
+      }
+    }
+  }
+
+
+  @media #{$b-small} {
+    margin: 0 auto;
+    width: 90vw;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    height: $header-height / 3 * 1;
+    li {
+      a {
+        padding: 0 .7em;
+        text-align: left;
+
+      }
+      &.active, &:hover {
+        border-bottom: .4em solid darken($color-white, 20%);
+        a {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  @media #{$b-medium} {
+    li {
+      a {
+        padding: 0 1.5em;
+      }
+    }
+  }
+
+  @media #{$b-large} {
+    li {
+      a {
+        padding: 0 2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+body {
+  color: $color-black;
+}
+
+
+h1, h2, h3 {
+  font-family: $font-headings;
+  text-transform: uppercase;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(to top, $color-link 30%, transparent 0%);
+  &:hover {
+    background: $color-link;
+  }
+}

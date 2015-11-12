@@ -1,0 +1,38 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container-title {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: teal;
+  margin: 0 auto;
+  width: map-get($widths, xsmall);
+  @media #{$b-small} {
+    width: map-get($widths, small);
+  }
+  @media #{$b-medium} {
+    flex-direction: row;
+    width: map-get($widths, medium);
+  }
+  @media #{$b-large} {
+    width: map-get($widths, large);
+  }
+  @media #{$b-xlarge} {
+    width: map-get($widths, xlarge);
+  }
+}
+
+
+
+
+
+.recent_work-article {
+  height: 200px;
+  width: 100px;
+  background: red;
+}

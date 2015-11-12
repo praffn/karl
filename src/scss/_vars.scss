@@ -1,0 +1,34 @@
+$font-headings: "futura-pt", "Futura PT", "Futura", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+$font-body: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+
+// Break points
+$b-xsmall: "only screen and (min-width: 321px)"; // Above iphone5 ~
+$b-small: "only screen and (min-width: 415px)"; // Above iPhone 6+ ~
+$b-medium: "only screen and (min-width: 769px)"; // Above iPad ~
+$b-large: "only screen and (min-width: 1000px)"; // 960 gs
+$b-xlarge: "only screen and (min-width: 1200px)"; // Large screen
+
+// Large
+$color-white: #fefefe;
+$color-black: #333;
+  $color-faded-black: #aaa;
+$color-accent: #C0FFEE;
+
+$color-link: $color-accent;
+
+// Super vars:
+$padding: .8em;
+$widths: (
+  xsmall: 100%,
+  small: 100%,
+  medium: 46em,
+  large: 60em,
+  xlarge: 72em
+);
+
+
+// COMPONENTS:
+  
+  //HEADER
+  $header-height: 8em;
+

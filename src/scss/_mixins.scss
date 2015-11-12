@@ -1,0 +1,18 @@
+%button {
+  display: inline-block;
+  background: $color-accent;
+  padding: .6em 1em;
+  color: $color-black;
+}
+
+%button-bordered {
+  @extend %button;
+  background: transparent;
+  border: .3em solid $color-accent;
+  color: $color-white;
+  transition: .3s ease;
+  &:hover {
+    background: $color-accent;
+    color: $color-black;
+  }
+}

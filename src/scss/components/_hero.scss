@@ -1,0 +1,69 @@
+.hero {
+  background-image: url(http://unsplash.it/1920/1080?image=112);
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  padding: 0 $padding;
+  position: relative;
+  z-index: 0;
+  color: $color-white;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba($color-black, .5), transparent);
+    pointer-events: none;
+    z-index: -1;
+  }
+  @media #{$b-large} {
+    padding: 0 ($padding * 5);
+  }
+  @media #{$b-xlarge} {
+    padding: 0 ($padding * 10);
+  }
+}
+
+.hero-title {
+  font-style: italic;
+  font-size: 2em;
+  margin-top: ($header-height / 2) + 1.5;
+  margin-bottom: 0;
+  line-height: 1em;
+  @media #{$b-small} {
+    margin-top: ($header-height / 2) + 3;
+  }
+  @media #{$b-medium} {
+    margin-top: ($header-height / 2) + 4;
+  }
+  @media #{$b-large} {
+    margin-top: ($header-height / 2) + 6;
+  }
+}
+
+.hero-subtitle {
+  margin: 0 0 1em 0;
+}
+
+.hero-cta {
+  margin-bottom: 2em;
+  @extend %button-bordered;
+  font-family: $font-headings;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  @media #{$b-small} {
+    margin-bottom: 4em;
+  }
+  @media #{$b-medium} {
+    margin-bottom: 6em;
+  }
+  @media #{$b-large} {
+    margin-bottom: 8.5em;
+  }
+}
+
+
