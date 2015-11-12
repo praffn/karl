@@ -1,0 +1,25 @@
+.work {
+  margin-top: 2em;
+}
+
+.work-article {
+  @extend .recent_work-article;
+  @media #{$b-medium} {
+    width: 33%;
+  }
+  @media #{$b-large} {
+    width: 25%;
+  }
+}
+
+.work-permalink {
+  @extend .recent_work-permalink;
+}
+
+.work-image {
+  @extend .recent_work-image;
+}
+
+.work-meta {
+  @extend .recent_work-meta;
+}

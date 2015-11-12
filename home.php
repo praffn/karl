@@ -28,13 +28,30 @@
         <article class="recent_work-article">
           <?php
             $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(500, 500) )[0];
+            $tags = get_the_tags();
+              $i = 0; $len = count($tags);
           ?>
 
           <a href="<?php the_permalink(); ?>" class="recent_work-permalink">
             <img src="<?php echo $image_url; ?>" class="recent_work-image">
-            <h2 class="recent_work-title"><span><?php the_title(); ?></span></h2>
+            <div class="recent_work-meta">
+              <div>
+                <h2><?php the_title(); ?></h2>
+                <p>
+                  <?php if ($len > 1): foreach($tags as $tag): ?>
+                    <?php
+                      if ($i !== $len - 1) {
+                        echo $tag->name . ', ';
+                      } else {
+                        echo $tag->name;
+                      }
+                      $i++;
+                    ?>
+                  <?php endforeach; endif; ?>
+                </p>
+              </div>
+            </div>
           </a>
-
 
         </article>
       <?php endwhile; endif; ?>
