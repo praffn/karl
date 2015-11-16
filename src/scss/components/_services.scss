@@ -6,7 +6,13 @@
 
 .services_item {
   padding: 0 .5em;
-  width: 25%;
+  width: 100%;
+  @media #{$b-small} {
+    width: 50%;
+  }
+  @media #{$b-medium} {
+    width: 25%;
+  }
 }
 
 .services_icon {
@@ -28,7 +34,19 @@
       top: 50%;
       left: 50%;
       transform: translate3d(-50%, -50%, 0);
-      font-size: 5em;
+      font-size: 6em;
+      @media #{$b-small} {
+        font-size: 3em;
+      }
+      @media #{$b-medium} {
+        font-size: 2.5em;
+      }
+      @media #{$b-large} {
+        font-size: 3.5em;
+      }
+      @media #{$b-xlarge} {
+        font-size: 5em;
+      }
     }
   }
 }

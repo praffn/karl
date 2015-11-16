@@ -1042,7 +1042,13 @@ a img {
 
 .services_item {
   padding: 0 .5em;
-  width: 25%; }
+  width: 100%; }
+  @media only screen and (min-width: 415px) {
+    .services_item {
+      width: 50%; } }
+  @media only screen and (min-width: 769px) {
+    .services_item {
+      width: 25%; } }
 
 .services_icon {
   margin: 0;
@@ -1063,7 +1069,19 @@ a img {
       left: 50%;
       -webkit-transform: translate3d(-50%, -50%, 0);
               transform: translate3d(-50%, -50%, 0);
-      font-size: 5em; }
+      font-size: 6em; }
+      @media only screen and (min-width: 415px) {
+        .services_icon span i {
+          font-size: 3em; } }
+      @media only screen and (min-width: 769px) {
+        .services_icon span i {
+          font-size: 2.5em; } }
+      @media only screen and (min-width: 1000px) {
+        .services_icon span i {
+          font-size: 3.5em; } }
+      @media only screen and (min-width: 1200px) {
+        .services_icon span i {
+          font-size: 5em; } }
 
 .services_title {
   font-size: 1em;
