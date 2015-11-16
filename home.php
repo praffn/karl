@@ -8,6 +8,43 @@
 
 
   <section class="recent_work">
+    <h2 class="container-title">Services</h2>
+    <ul class="services container">
+
+      <li class="services_item">
+        <figure class="services_icon">
+          <span><i class="fa fa-calendar fa-fw"></i></span>
+        </figure>
+        <h4 class="services_title">Project Management</h4>
+        <p class="services_description">I love being in charge and I’m not afraid of responsibility. Let’s structure our process and I’ll get the gears running smoothly.</p>
+      </li>
+
+      <li class="services_item">
+        <figure class="services_icon">
+          <span><i class="fa fa-paint-brush fa-fw"></i></span>
+        </figure>
+        <h4 class="services_title">Concept Development &amp; Design</h4>
+        <p class="services_description">My head is filled with crazy ideas and my hands urge to make them real. I can think outside the box and I can execute my visions.</p>
+      </li>
+
+      <li class="services_item">
+        <figure class="services_icon">
+          <span><i class="fa fa-video-camera fa-fw"></i></span>
+        </figure>
+        <h4 class="services_title">Video Production</h4>
+        <p class="services_description">I am a director, producer, writer, editor, cinematographer, audio engineer and production designer. I’m basically a full film crew in one person.</p>
+      </li>
+
+      <li class="services_item">
+        <figure class="services_icon">
+          <span><i class="fa fa-users fa-fw"></i></span>
+        </figure>
+        <h4 class="services_title">Social Media &amp; Content</h4>
+        <p class="services_description">You’ll never catch me off the beat. The social medias are an extension to me and i know how to make strategies and content for them.</p>
+      </li>
+
+    </ul>
+
     <h2 class="container-title">Recent Work</h2>
     <div class="container">
 
@@ -64,7 +101,8 @@
 
       ?>
 
-    </div>
+    </div> <!-- recent work -->
+
   </section>
 
 <?php get_footer(); ?>

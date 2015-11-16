@@ -64,6 +64,10 @@ body {
   @media #{$b-small} {
     display: none;
   }
+
+  #header-menu_toggle_checkbox:checked ~ & {
+    box-shadow: 0 .1em 1em rgba(black, .4);
+  }
 }
 
 #header-menu_toggle_checkbox {
@@ -110,7 +114,7 @@ body {
     }
     &.active, &:hover {
       a {
-        background: darken($color-white, 10%);
+        background: $color-accent;
       }
     }
   }

@@ -1,5 +1,5 @@
 .work {
-  margin-top: 2em;
+  margin: 2em 0;
 }
 
 .work-article {
@@ -22,4 +22,40 @@
 
 .work-meta {
   @extend .recent_work-meta;
+}
+
+.work-pagination {
+  display: flex;
+  padding: .5em;
+  margin-top: 2em;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.work-pagination_button {
+  a {
+    background: none;
+    border: .3em solid $color-accent;
+    display: block;
+    padding: .4em;
+    font-weight: 600;
+    border-radius: 100em;
+    font-family: $font-headings;
+    text-transform: uppercase;  
+    transition: background .3s;
+    &:hover {
+      background: $color-accent;
+    }
+    @media #{$b-small} {
+      font-weight: 800;
+      padding: 1em;
+      border-width: .5em;
+    }
+  }
+  &.left {
+    float: left;
+  }
+  &.right {
+    float: right;
+  }
 }

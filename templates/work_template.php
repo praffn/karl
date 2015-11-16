@@ -68,11 +68,18 @@
 
   </div>
 
-   <div class="navigation">
-    <div class="alignleft"><?php next_posts_link('&laquo;
-Previous Entries') ?></div>
-    <div class="alignright"><?php previous_posts_link('Next
-Entries &raquo;') ?></div>
+
+  <div class="container">
+    <div class="work-pagination">
+      
+      <span class="work-pagination_button left">
+        <?php next_posts_link('<i class="fa fa-chevron-left"></i> Older work'); ?>
+      </span>
+      <span class="work-pagination_button right">
+        <?php previous_posts_link('Newer work <i class="fa fa-chevron-right"></i>') ?>
+      </span>
+
+    </div>
   </div>
 
   <?php 

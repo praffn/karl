@@ -74,7 +74,7 @@
 }
 
 .post-main-social {
-  border-top: .1em solid black;
+  border-top: .1em solid $color-faded-black;
   margin-top: 2em;
   width: 80%;
   padding: 0 .8em;
@@ -110,11 +110,18 @@
 }
 
 .post-related {
-  padding: 0 0 0 2em;
+  margin-top: 1em;
+  border-top: .1em solid $color-faded-black;  
+  text-align: center;
+  //padding: 0 0 0 2em;
+  padding: .5em;
   width: 100%;
   transition: opacity .3s;
   @media #{$b-large} {
+    border: none;
+    margin: 0;
     width: 25%;
+    padding: 0 0 0 2em;
   }
   &:hover .post-related-article_container {
     opacity: 1;
@@ -123,13 +130,28 @@
 
 
 .post-related-article_container {
+  display: flex;
+  flex-direction: column;
   opacity: .2;
   transition: opacity .3s;
+  flex-wrap: wrap;
+  @media #{$b-small} {
+    flex-direction: row;
+  }
+  @media #{$b-large} {
+    flex-direction: column;
+  }
 }
 
 .post-related-article {
   @extend .recent_work-article;
   width: 100%;
+  @media #{$b-small} {
+    width: 50%;
+  }
+  @media #{$b-large} {
+    width: 100%;
+  }
 }
 
 .post-related-permalink {
