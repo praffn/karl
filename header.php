@@ -28,7 +28,7 @@
   <header class="header">
     <section class="header-logo">
       <figure class="header-logo_svg">
-        <?php include('assets/images/logo.svg'); ?>
+        <?php include(TEMPLATEPATH . '/assets/images/logo.svg'); ?>
       </figure>
       <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
     </section>
