@@ -6,7 +6,7 @@
   $posts_per_page = 12;
 
 ?>
-
+<script>var work = true;</script>
 <div class="work">
 
   <h1 class="work_title">Work</h1>
