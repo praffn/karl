@@ -1038,7 +1038,11 @@ a img {
   margin-top: 4em;
   padding: 3em 0;
   background: #333;
-  color: #fefefe; }
+  color: #fefefe;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0; }
 
 .footer_item {
   width: 100%;
