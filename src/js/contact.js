@@ -90,7 +90,7 @@ if (typeof contactForm !== 'undefined') void function () {
     subjectInput.value = '';
     bodyInput.value = '';
 
-    submitButton.innerHTML = 'Email sent!';
+    submitButton.innerHTML = '<i class="fa fa-check fa-fw"></i> Email sent!';
     formEle.classList.add('success');
   }
 

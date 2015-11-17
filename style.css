@@ -1213,12 +1213,19 @@ a img {
   margin-bottom: 1em; }
 
 .contact_form label {
+  font-weight: 600;
+  font-family: "futura-pt", "Futura PT", "Futura", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  text-transform: uppercase;
   display: block; }
 
 .contact_form textarea {
   height: 10em; }
 
 .contact_form-submit {
+  font-family: "futura-pt", "Futura PT", "Futura", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.5em;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1229,7 +1236,10 @@ a img {
   transition: .3s; }
   .contact_form-submit:hover {
     background: #c0ffee; }
+  .contact_form-submit:focus {
+    outline: none; }
   form.success .contact_form-submit {
+    color: #fefefe;
     background: #2ecc71;
     border-color: #2ecc71; }
 

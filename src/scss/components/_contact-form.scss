@@ -35,6 +35,9 @@
 }
 
 .contact_form label {
+  font-weight: 600;
+  font-family: $font-headings;
+  text-transform: uppercase;
   display: block;
 }
 
@@ -43,6 +46,10 @@
 }
 
 .contact_form-submit {
+  font-family: $font-headings;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.5em;
   appearance: none;
   background: none;
   padding: .3em .6em;
@@ -51,7 +58,11 @@
   &:hover {
     background: $color-accent;
   }
+  &:focus {
+    outline: none;
+  }
   form.success & {
+    color: $color-white;
     background: #2ecc71;
     border-color: #2ecc71;
   }
