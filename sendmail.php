@@ -12,7 +12,7 @@
   function processEmail($data) {
     global $to;
     $headers = 'From: ' . $data->name . ' <' . $data->email . '>' . "\r\n";
-    $message = "Hi, Karl!\r\n $fromName just sent you an email through your website:\r\n\r\n" . $data->body;
+    $message = "Hi, Karl!\r\n" . $data->name . " just sent you an email through your website:\r\n\r\n" . $data->body;
 
     mail($to, $data->subject, $message, $headers);
     echo '{"success":true}';

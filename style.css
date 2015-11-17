@@ -1197,6 +1197,18 @@ a img {
     outline: none;
     background: #c0ffee; }
 
+.contact_form-errors {
+  color: #e74c3c; }
+  form.success .contact_form-errors {
+    display: none; }
+
+.contact_form-sent {
+  display: none;
+  font-size: 2em;
+  color: #2ecc71; }
+  form.success .contact_form-sent {
+    display: block; }
+
 .contact_form-group {
   margin-bottom: 1em; }
 
@@ -1212,9 +1224,14 @@ a img {
           appearance: none;
   background: none;
   padding: .3em .6em;
-  border: 0.3em solid #c0ffee; }
+  border: 0.3em solid #c0ffee;
+  -webkit-transition: .3s;
+  transition: .3s; }
   .contact_form-submit:hover {
     background: #c0ffee; }
+  form.success .contact_form-submit {
+    background: #2ecc71;
+    border-color: #2ecc71; }
 
 body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Tahoma, sans-serif; }

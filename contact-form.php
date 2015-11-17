@@ -10,6 +10,7 @@
       <script>var contactForm = true;</script>
       <form class="contact_form" novalidate action="/wp-content/themes/karl/sendmail.php">
 
+        <p class="contact_form-sent">Email successfully sent! Thanks!</p>
         <p class="contact_form-errors"></p>
 
         <div class="contact_form-group">

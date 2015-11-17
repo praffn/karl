@@ -9,6 +9,8 @@ if (typeof contactForm !== 'undefined') void function () {
   var subjectInput = document.querySelector('#contact_form-subject');
   var bodyInput = document.querySelector('#contact_form-body');
 
+  var submitButton = document.querySelector('.contact_form-submit');
+
   function getValues () {
     return {
       name: nameInput.value,
@@ -46,9 +48,9 @@ if (typeof contactForm !== 'undefined') void function () {
     var errmsg = [];
     for (var i = 0; i < errors.length; i++) {
       if (i === errors.length - 1) {
-        errmsg.push(errors[i]);
+        errmsg.push('<i class="fa fa-exclamation fa-fw"></i> ' + errors[i]);
       } else {
-        errmsg.push(errors[i] + '<br>');
+        errmsg.push('<i class="fa fa-exclamation fa-fw"></i> ' + errors[i] + '<br>');
       }
     }
     errorsEle.innerHTML = errmsg.join('');
@@ -63,7 +65,7 @@ if (typeof contactForm !== 'undefined') void function () {
     var values = getValues();
     if (checkValues(values)) {
       sendMail(values, function(response) {
-        console.log(response);
+        if (response.success) success();
       });
     }
 
@@ -75,11 +77,21 @@ if (typeof contactForm !== 'undefined') void function () {
     req.open('POST', formEle.action, true);
     req.onreadystatechange = function() {
       if (req.readyState === req.DONE) {
-        callback(req.response);
+        callback(JSON.parse(req.response));
       }
     }
     req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     req.send('mail=' + JSON.stringify(values));
+  }
+
+  function success() {
+    nameInput.value = '';
+    emailInput.value = '';
+    subjectInput.value = '';
+    bodyInput.value = '';
+
+    submitButton.innerHTML = 'Email sent!';
+    formEle.classList.add('success');
   }
 
 }();
