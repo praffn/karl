@@ -2,7 +2,10 @@
 
   $x = 'phillip' . '@' . 'praffn' . '.' . 'dk';
 
-  $headers = 'From: My Name <myname@mydomain.com>' . "\r\n\\";
-  mail($x, 'The subject', 'The message',  $headers);
+  $headers = 'Karl Broholm <karl@broholm.dk>' . "\r\n\\";
+
+  $message = 'xNAMEx has sent you a message:\n\nSubject:\n' . 'xSUBJECT' . '\n\nMessage:\n' . 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, architecto.';
+
+  wp_mail($x, 'Hej Med dig', $message,  $headers);
 
 ?>
