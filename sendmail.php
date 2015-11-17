@@ -6,6 +6,6 @@
 
   $message = 'xNAMEx has sent you a message:\n\nSubject:\n' . 'xSUBJECT' . '\n\nMessage:\n' . 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, architecto.';
 
-  wp_mail($x, 'Hej Med dig', $message,  $headers);
+  mail($x, 'Hej Med dig', $message,  $headers);
 
 ?>
