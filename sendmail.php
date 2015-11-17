@@ -1,11 +1,12 @@
 <?php 
 
-  $x = 'phillip' . '@' . 'praffn' . '.' . 'dk';
+  $from = 'karl@broholm.com';
+  $to = 'phillip@praffn.dk';
+  $subject = 'Hello There';
+  $message = 'What are you doing?';
 
-  $headers = 'Karl Broholm <karl@broholm.dk>' . "\r\n\\";
+  $headers = 'Karl Broholm <' . $from .'>' . "\r\n\\";
 
-  $message = 'xNAMEx has sent you a message:\n\nSubject:\n' . 'xSUBJECT' . '\n\nMessage:\n' . 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, architecto.';
-
-  mail($x, 'Hej Med dig', $message,  $headers);
+  mail($to, $subject, $message,  $headers);
 
 ?>
