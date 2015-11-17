@@ -18,10 +18,10 @@
       <section class="footer_item">
         <h3 class="footer_title">Connect</h3>
         <ul class="footer_social">
-          <li><a href="#"><i class="fa fa-instagram fa-fw"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin fa-fw"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube fa-fw"></i></a></li>
+          <li><a href="https://www.instagram.com/karlbroholm/"><i class="fa fa-instagram fa-fw"></i></a></li>
+          <li><a href="https://www.facebook.com/Karl-Broholm-1504176439876904"><i class="fa fa-facebook fa-fw"></i></a></li>
+          <li><a href="https://dk.linkedin.com/in/karlbroholm"><i class="fa fa-linkedin fa-fw"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UC8gZjLRyU9E61e3H-Ms-8BA"><i class="fa fa-youtube fa-fw"></i></a></li>
         </ul>
       </section>
 
