@@ -781,6 +781,38 @@ a img {
 .work_title {
   text-align: center; }
 
+.work-filter_title {
+  text-align: center;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  margin: 0; }
+
+.work-filter {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none; }
+
+.work-filter_item {
+  padding: 0 1em;
+  font-family: "futura-pt", "Futura PT", "Futura", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  text-transform: uppercase; }
+  .work-filter_item a {
+    display: block;
+    padding: .1em .3em;
+    background: none; }
+    .work-filter_item a:hover {
+      background: #c0ffee; }
+  .work-filter_item.active {
+    background: #c0ffee;
+    font-weight: 600; }
+
 @media only screen and (min-width: 769px) {
   .work-article {
     width: 33%; } }

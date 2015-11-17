@@ -1,15 +1,55 @@
 <?php /* Template Name: Work Template */ ?>
 <?php get_header(); ?>
 
-<?php 
 
+<?php 
   $posts_per_page = 12;
+  if (isset($_GET['filter'])) $filter_tag = $_GET['filter'];
+
+  $filters = array(
+    array(
+      'name' => 'Illustration',
+      'slug' => 'illustration'
+    ),
+
+    array(
+      'name' => 'Video',
+      'slug' => 'video'
+    ),
+
+    array(
+      'name' => 'Website',
+      'slug' => 'website'
+    ),
+
+    array(
+      'name' => 'Design',
+      'slug' => 'design'
+    )
+  );
 
 ?>
 <script>var work = true;</script>
 <div class="work">
 
   <h1 class="work_title">Work</h1>
+  <h3 class="work-filter_title">Filter:</h3>
+  <div class="container">
+    <ul class="work-filter">
+      <?php foreach($filters as $filter): ?>
+        <li class="work-filter_item <?php if (isset($_GET['filter']) && $_GET['filter'] === $filter['slug']) echo 'active'; ?>">
+          <a href="<?php the_permalink(); ?>?filter=<?php echo $filter['slug']; ?>">
+            <?php echo $filter['name']; ?>
+          </a>
+        </li>
+      <?php endforeach; ?>
+      <?php if (isset($_GET['filter'])): ?>
+        <li class="work-filter_item">
+          <a href="<?php the_permalink(); ?>"><i class="fa fa-times fa-fw"></i> Clear filter</a>
+        </li>
+      <?php endif; ?>
+    </ul>
+  </div>
 
   <?php 
     
@@ -31,8 +71,11 @@
       $args = array(
         'category_name' => 'portfolio',
         'paged' => $paged,
-        'posts_per_page' => $posts_per_page
+        'posts_per_page' => $posts_per_page,
       );
+      if (isset($filter_tag)) {
+        $args['tag'] = $filter_tag;
+      }
       query_posts($args);
     ?>
 
