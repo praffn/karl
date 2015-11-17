@@ -74,14 +74,14 @@
             $tags = get_the_tags();
               $i = 0; $len = count($tags);
           ?>
-
           <a href="<?php the_permalink(); ?>" class="recent_work-permalink">
             <img src="<?php echo $image_url; ?>" class="recent_work-image">
             <div class="recent_work-meta">
               <div>
+
                 <h2><?php the_title(); ?></h2>
                 <p>
-                  <?php if ($len > 1): foreach($tags as $tag): ?>
+                  <?php if ($len > 0 && is_array($tags)): foreach($tags as $tag): ?>
                     <?php
                       if ($i !== $len - 1) {
                         echo $tag->name . ', ';
@@ -90,7 +90,8 @@
                       }
                       $i++;
                     ?>
-                  <?php endforeach; endif; ?>
+                  <?php endforeach; else: ?>
+                  <?php endif; ?>
                 </p>
               </div>
             </div>

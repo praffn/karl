@@ -777,6 +777,17 @@ a img {
   .work-article {
     width: 25%; } }
 
+.work-image {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: -webkit-filter .3s;
+  transition: -webkit-filter .3s;
+  transition: filter .3s;
+  transition: filter .3s, -webkit-filter .3s; }
+  .work-article:hover .work-image {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+
 .work-pagination {
   display: -webkit-box;
   display: -webkit-flex;

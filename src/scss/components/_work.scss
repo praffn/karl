@@ -18,6 +18,11 @@
 
 .work-image {
   @extend .recent_work-image;
+  filter: grayscale(1);
+  transition: filter .3s;
+  .work-article:hover & {
+    filter: grayscale(0);
+  }
 }
 
 .work-meta {

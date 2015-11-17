@@ -48,7 +48,7 @@
               <div>
                 <h2><?php the_title(); ?></h2>
                 <p>
-                  <?php if ($len > 1): foreach($tags as $tag): ?>
+                  <?php if ($len > 0 && is_array($tags)): foreach($tags as $tag): ?>
                     <?php
                       if ($i !== $len - 1) {
                         echo $tag->name . ', ';
