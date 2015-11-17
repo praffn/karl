@@ -4,12 +4,7 @@
 
 .work_title {
   text-align: center;
-}
-
-.work-filter_title {
-  text-align: center;
-  font-family: $font-body;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .work-filter {
@@ -21,19 +16,20 @@
 }
 
 .work-filter_item {
-  padding: 0 1em;
   font-family: $font-headings;
   text-transform: uppercase;
+  padding: 0 1em;
   a {
-    display: block;
-    padding: .1em .3em;
     background: none;
+    display: block;
+    padding: .3em .6em;
+    border: .2em solid transparent;
     &:hover {
-      background: $color-accent;
+      border: .2em solid $color-accent;
     }
   }
-  &.active {
-    background: $color-accent;
+  &.active a {
+    border: .2em solid $color-accent;
     font-weight: 600;
   }
 }

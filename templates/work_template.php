@@ -33,9 +33,11 @@
 <div class="work">
 
   <h1 class="work_title">Work</h1>
-  <h3 class="work-filter_title">Filter:</h3>
   <div class="container">
     <ul class="work-filter">
+      <li class="work-filter_item <?php if (!isset($_GET['filter'])) echo 'active'; ?>">
+        <a href="<?php the_permalink(); ?>">All</a>
+      </li>
       <?php foreach($filters as $filter): ?>
         <li class="work-filter_item <?php if (isset($_GET['filter']) && $_GET['filter'] === $filter['slug']) echo 'active'; ?>">
           <a href="<?php the_permalink(); ?>?filter=<?php echo $filter['slug']; ?>">
@@ -43,11 +45,6 @@
           </a>
         </li>
       <?php endforeach; ?>
-      <?php if (isset($_GET['filter'])): ?>
-        <li class="work-filter_item">
-          <a href="<?php the_permalink(); ?>"><i class="fa fa-times fa-fw"></i> Clear filter</a>
-        </li>
-      <?php endif; ?>
     </ul>
   </div>
 

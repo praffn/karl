@@ -779,12 +779,8 @@ a img {
   margin: 2em 0; }
 
 .work_title {
-  text-align: center; }
-
-.work-filter_title {
   text-align: center;
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
-  margin: 0; }
+  margin-bottom: 0; }
 
 .work-filter {
   width: 100%;
@@ -800,17 +796,18 @@ a img {
   list-style: none; }
 
 .work-filter_item {
-  padding: 0 1em;
   font-family: "futura-pt", "Futura PT", "Futura", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 0 1em; }
   .work-filter_item a {
+    background: none;
     display: block;
-    padding: .1em .3em;
-    background: none; }
+    padding: .3em .6em;
+    border: .2em solid transparent; }
     .work-filter_item a:hover {
-      background: #c0ffee; }
-  .work-filter_item.active {
-    background: #c0ffee;
+      border: 0.2em solid #c0ffee; }
+  .work-filter_item.active a {
+    border: 0.2em solid #c0ffee;
     font-weight: 600; }
 
 @media only screen and (min-width: 769px) {
