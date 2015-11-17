@@ -1,6 +1,6 @@
 <?php
 
-  $to = 'karl' . '@' . 'broholm' . '.' . 'dk';
+  $to = 'karl' . '@' . 'broholm' . '.' . 'com';
   
   if (isset($_POST['mail'])) {
     $data = json_decode($_POST['mail']);
