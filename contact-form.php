@@ -13,6 +13,11 @@
         <p class="contact_form-errors"></p>
 
         <div class="contact_form-group">
+          <label for="contact_form-name">Your name</label>
+          <input type="text" name="name" id="contact_form-name">
+        </div>
+
+        <div class="contact_form-group">
           <label for="contact_form-email">Your email</label>
           <input type="email" name="email" id="contact_form-email">
         </div>

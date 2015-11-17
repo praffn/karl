@@ -4,12 +4,14 @@ if (typeof contactForm !== 'undefined') void function () {
   var errorsEle = document.querySelector('.contact_form-errors');
 
   // Input elements
+  var nameInput = document.querySelector('#contact_form-name');
   var emailInput = document.querySelector('#contact_form-email');
   var subjectInput = document.querySelector('#contact_form-subject');
   var bodyInput = document.querySelector('#contact_form-body');
 
   function getValues () {
     return {
+      name: nameInput.value,
       email: emailInput.value,
       subject: subjectInput.value,
       body: bodyInput.value
@@ -18,6 +20,9 @@ if (typeof contactForm !== 'undefined') void function () {
 
   function checkValues(data) {
     var errors = [];
+    if (!data.name) {
+      errors.push('You must supply your name');
+    }
     if (!data.email) {
       errors.push('You must supply an email');
     }
