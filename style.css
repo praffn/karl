@@ -775,6 +775,19 @@ a img {
     .page-hero-title {
       margin-top: 5em; } }
 
+.page-content {
+  padding: .3em;
+  margin-top: 1em;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  width: 100%; }
+  @media only screen and (min-width: 769px) {
+    .page-content {
+      width: 75%; } }
+  @media only screen and (min-width: 1000px) {
+    .page-content {
+      width: 66.67%; } }
+
 .work {
   margin: 2em 0; }
 
