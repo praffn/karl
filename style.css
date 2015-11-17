@@ -1028,15 +1028,16 @@ a img {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  padding: 0; }
   .footer_contact li {
-    margin: 0em; }
+    margin: 0 0 .4em 0;
+    text-align: center; }
   .footer_contact a {
     color: #fefefe;
     background: none;
     font-weight: 500;
     display: inline-block;
-    padding: .3em .5em;
     -webkit-transition: .3s;
     transition: .3s;
     border-radius: 100em; }

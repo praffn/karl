@@ -28,8 +28,8 @@
       <section class="footer_item">
         <h3 class="footer_title">Contact</h3>
         <ul class="footer_contact">
-          <li><a class="injectEmail"></a></li>
-          <li><a class="injectPhone"></a></li>
+          <li><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a class="injectEmail"></a></li>
+          <li><i class="fa fa-phone"></i>&nbsp;&nbsp;<a class="injectPhone"></a></li>
         </ul>
       </section>
 
