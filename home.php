@@ -14,7 +14,7 @@
 
 
   <section class="recent_work">
-    <h2 class="container-title">Services</h2>
+    <h2 class="container-title">Expertise</h2>
     <ul class="services container">
 
       <li class="services_item">
