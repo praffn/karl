@@ -1,12 +1,6 @@
 <?php 
 
-  $from = 'karl@broholm.com';
-  $to = 'phillip@praffn.dk';
-  $subject = 'Hello There';
-  $message = 'What are you doing?';
-
-  $headers = 'Karl Broholm <' . $from .'>' . "\r\n\\";
-
-  mail($to, $subject, $message,  $headers);
+  $headers = 'From: Karl Broholm <' . 'karl@broholm.com' . '>' . "\r\n\\";
+  mail('phillip@praffn.dk', 'The subject', 'The message',  $headers);
 
 ?>
