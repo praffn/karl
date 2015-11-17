@@ -23,10 +23,15 @@
 }
 
 .recent_work-image {
+  filter: grayscale(1);
   display: block;
   padding: 0;
   background: 0;
   width: 100%;
+  transition: filter .3s;
+  .recent_work-article:hover & {
+    filter: grayscale(0);
+  }
   &:hover + .recent_work-meta {
     opacity: 1;
   }
