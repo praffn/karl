@@ -1,9 +1,15 @@
 <?php get_header(); ?>
 
-  <section class="hero">
-    <h2 class="hero-title">Lorem Ipsum Dolor Sit Amet</h2>
-    <h3 class="hero-subtitle">Culpa blanditiis neque veniam, eveniet unde expedita qui</h3>
-    <a href="#" class="hero-cta">Call-to-action</a>
+  <?php 
+
+    $theme_settings = get_option('YourTheme_theme_options');
+
+  ?>
+
+  <section class="hero" style="background-image: url(<?php echo $theme_settings['hero_image']; ?>);">
+    <h2 class="hero-title"><?php echo $theme_settings['hero_title']; ?></h2>
+    <h3 class="hero-subtitle"><?php echo $theme_settings['hero_subtitle']; ?></h3>
+    <a href="<?php echo $theme_settings['hero_cta_link']; ?>" class="hero-cta"><?php echo $theme_settings['hero_cta_label']; ?></a>
   </section>
 
 

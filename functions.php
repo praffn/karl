@@ -17,3 +17,6 @@
     return $classes;
   }
   add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
+
+  // Theme options https://github.com/cferdinandi/wp-theme-options
+  require_once('theme-options.php');
