@@ -3,7 +3,16 @@
     
     <div class="container">
 
-      <section class="footer_item">Footer 1</i></section>
+      <section class="footer_item">
+        
+        <figure class="footer_logo">
+          <?php include('assets/images/logo.svg') ?>
+        </figure>
+
+        <h3 class="footer_title">Karl Broholm</h3>
+        <h4 class="footer_copyright">Copyright &copy; 2015</h4>
+
+      </section>
 
       <section class="footer_item">
         <h3 class="footer_title">Connect</h3>

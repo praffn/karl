@@ -27,7 +27,9 @@
   
   <header class="header">
     <section class="header-logo">
-      <img src="http://unsplash.it/40/40">
+      <figure class="header-logo_svg">
+        <?php include('assets/images/logo.svg'); ?>
+      </figure>
       <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
     </section>
 

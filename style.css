@@ -508,10 +508,13 @@ a img {
   .header-logo a {
     font-weight: 800;
     font-style: italic; }
-  .header-logo img {
-    width: 2.5em;
-    height: 2.5em;
-    margin-right: 0.5em; }
+
+.header-logo_svg {
+  margin: 0 1em 0 0;
+  width: 4em;
+  height: 4em; }
+  .header-logo_svg svg {
+    fill: #333; }
 
 .header-nav {
   height: 2.66667em; }
@@ -1020,9 +1023,14 @@ a img {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .footer_contact li {
-    margin: 0 .5em; }
+    margin: 0em; }
   .footer_contact a {
     color: #fefefe;
     background: none;
@@ -1034,6 +1042,21 @@ a img {
     border-radius: 100em; }
     .footer_contact a:hover {
       color: #c0ffee; }
+
+.footer_logo {
+  margin: 0 auto;
+  width: 20%; }
+  .footer_logo svg {
+    fill: rgba(254, 254, 254, 0.1); }
+
+.footer_logo + .footer_title {
+  margin: 0;
+  color: rgba(254, 254, 254, 0.1); }
+
+.footer_copyright {
+  margin: 0;
+  text-align: center;
+  color: rgba(254, 254, 254, 0.1); }
 
 .services {
   list-style: none;

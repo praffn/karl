@@ -35,13 +35,23 @@ body {
     font-style: italic;
   }
 
-  img {
-    $logo-image-size: 2.5em;
-    width: $logo-image-size;
-    height: $logo-image-size;
-    margin-right: $logo-image-size / 5;
-  }
+  // img {
+  //   $logo-image-size: 2.5em;
+  //   width: $logo-image-size;
+  //   height: $logo-image-size;
+  //   margin-right: $logo-image-size / 5;
+  // }
 
+}
+
+.header-logo_svg {
+  $logo-image-size: 4em;
+  margin: 0 1em 0 0;
+  width: $logo-image-size;
+  height: $logo-image-size;
+  svg {
+    fill: $color-black;
+  }
 }
 
 .header-nav {

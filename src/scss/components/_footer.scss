@@ -50,8 +50,9 @@
 .footer_contact {
   list-style: none;
   display: flex;
+  flex-direction: column;
   li {
-    margin: 0 .5em;
+    margin: 0em;
   }
   a {
     color: $color-white;
@@ -67,4 +68,23 @@
       color: $color-accent;
     }
   }
+}
+
+.footer_logo {
+  margin: 0 auto;
+  width: 20%;
+  svg {
+    fill: rgba($color-white, .1);
+  }
+}
+
+.footer_logo + .footer_title {
+  margin: 0;
+  color: rgba($color-white, .1);
+}
+
+.footer_copyright {
+  margin: 0;
+  text-align: center;
+  color: rgba($color-white, .1);
 }
