@@ -20,3 +20,6 @@
 
   // Theme options https://github.com/cferdinandi/wp-theme-options
   require_once('theme-options.php');
+
+  // Contact form shortcode
+  require_once('contact-form.php');

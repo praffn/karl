@@ -1,0 +1,37 @@
+.contact_form {
+  input, textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    appearance: none;
+    border: none;
+    background: darken($color-white, 10%);
+    padding: .5em 1em;
+    &:focus {
+      outline: none;
+      background: $color-accent;
+    }
+  }
+}
+
+.contact_form-group {
+  margin-bottom: 1em;
+}
+
+.contact_form label {
+  display: block;
+}
+
+.contact_form textarea {
+  height: 10em;
+}
+
+.contact_form-submit {
+  appearance: none;
+  background: none;
+  padding: .3em .6em;
+  border: .3em solid $color-accent;
+  &:hover {
+    background: $color-accent;
+  }
+}

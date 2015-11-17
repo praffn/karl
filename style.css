@@ -1183,5 +1183,38 @@ a img {
 .services_description {
   margin-top: 0; }
 
+.contact_form input, .contact_form textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: #e5e5e5;
+  padding: .5em 1em; }
+  .contact_form input:focus, .contact_form textarea:focus {
+    outline: none;
+    background: #c0ffee; }
+
+.contact_form-group {
+  margin-bottom: 1em; }
+
+.contact_form label {
+  display: block; }
+
+.contact_form textarea {
+  height: 10em; }
+
+.contact_form-submit {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  padding: .3em .6em;
+  border: 0.3em solid #c0ffee; }
+  .contact_form-submit:hover {
+    background: #c0ffee; }
+
 body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Tahoma, sans-serif; }
