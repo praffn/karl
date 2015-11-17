@@ -9,6 +9,8 @@
 
 <div class="work">
 
+  <h1 class="work_title">Work</h1>
+
   <?php 
     
     // $original_query = $wp_query;

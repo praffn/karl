@@ -2,6 +2,10 @@
   margin: 2em 0;
 }
 
+.work_title {
+  text-align: center;
+}
+
 .work-article {
   @extend .recent_work-article;
   @media #{$b-medium} {

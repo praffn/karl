@@ -778,6 +778,9 @@ a img {
 .work {
   margin: 2em 0; }
 
+.work_title {
+  text-align: center; }
+
 @media only screen and (min-width: 769px) {
   .work-article {
     width: 33%; } }
