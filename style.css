@@ -434,6 +434,19 @@ a img {
   a img:hover {
     background: #c0ffee; }
 
+.video_wrapper {
+  margin: .5em 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+  .video_wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 

@@ -23,3 +23,10 @@
 
   // Contact form shortcode
   require_once('contact-form.php');
+
+  // wrap videos embed
+  function custom_oembed_filter($html, $url, $attr, $post_ID) {
+    $return = '<div class="video_wrapper">' . $html . '</div>';
+    return $return;
+  }
+  add_filter('embed_oembed_html', 'custom_oembed_filter', 10, 4);
