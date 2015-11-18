@@ -1,0 +1,25 @@
+.toolset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.toolset_item {
+  opacity: .2;
+  width: 25%;
+  padding: .8em;
+  transition: opacity .3s;
+  &:hover {
+    opacity: 1;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    display: block;
+    text-align: center;
+  }
+}

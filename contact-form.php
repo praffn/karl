@@ -1,8 +1,4 @@
 <?php
-
-  if (isset($_POST['lol'])) {
-    echo "hello, girl";
-  }
   
   function contact_form_shortcode() {
     ?>
